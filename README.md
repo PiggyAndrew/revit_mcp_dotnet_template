@@ -24,7 +24,7 @@ For example, to configure it for the `trae` environment, you would set the proje
       "args": [
         "run",
         "--project",
-        "d:\GitHub\revit_mcp_dotnet-main\src\NET.App.Revit\NET.Mcp.Server",
+        "d\\yourpath\\revit_mcp_dotnet_template\\src\\NET.App.Revit\\NET.Mcp.Server",
         "--no-build"
       ],
       "env": {}
@@ -79,3 +79,26 @@ Both examples are implemented on the .NET side. The plugin is verified with Revi
 
 - Detailed Revit app guide (English): `src/NET.App.Revit/README.md`
 - 详细中文指南：`src/NET.App.Revit/README.zh-CN.md`
+
+## Trae MCP Configuration
+
+Below is where to paste the MCP config JSON in Trae. Toggle the server after adding it.
+
+![Trae MCP Config Dialog](docs/images/trae-mcp-config.png)
+
+### How to Use `mcpConfig.json` in Trae
+
+- Open Trae and go to the `MCP` tab.
+- Click `+ Add` → select `Manual Config (JSON)`.
+- Paste the JSON from your `mcpConfig.json` (see example above).
+- Click `Confirm` and ensure the new server appears in the list.
+- Toggle the server ON to start it.
+
+### Start Project (Step-by-Step)
+
+- Prerequisites: install `'.NET 8 SDK'` and `Revit 2022` (other versions need manual plugin config).
+- Build plugin: open `src/NET.App.Revit/NET.App.Revit.sln`, build Release, copy the `.addin` and DLLs to `%APPDATA%\Autodesk\Revit\Addins\2022`.
+- Start MCP Server (CLI): run `dotnet run --project d:\GitHub\revit_mcp_dotnet-main\src\NET.App.Revit\NET.Mcp.Server`.
+- Start MCP Server (Trae): add the JSON via the MCP tab (as above) and toggle ON.
+- Launch Revit: open Revit, the plugin appears under `Add-ins`. Use the command to connect to the running MCP server.
+- Verify: execute a simple command via your MCP client or observe logs to confirm the Revit session is controlled.

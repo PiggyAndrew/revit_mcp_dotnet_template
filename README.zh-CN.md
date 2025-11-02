@@ -24,7 +24,7 @@ MCP 服务器通过位于 `src\NET.App.Revit\NET.Mcp.Server\` 中的 `mcpConfig.
       "args": [
         "run",
         "--project",
-        "d:\GitHub\revit_mcp_dotnet-main\src\NET.App.Revit\NET.Mcp.Server",
+        "d\\your_path\\revit_mcp_dotnet_template\\src\\NET.App.Revit\\NET.Mcp.Server",
         "--no-build"
       ],
       "env": {}
@@ -79,3 +79,26 @@ Revit 插件 (`NET.App.Revit`) 是 Autodesk Revit 的一个插件，它连接到
 
 - 英文详细指南：`src/NET.App.Revit/README.md`
 - 中文详细指南：`src/NET.App.Revit/README.zh-CN.md`
+
+## 在 Trae 中使用 MCP 配置
+
+下图展示了在 Trae 的 MCP 页面中粘贴 `mcpConfig.json` 的位置。添加后将该服务器切换为开启。
+
+![Trae MCP 配置对话框](docs/images/trae-mcp-config.png)
+
+### 在 Trae 中使用 `mcpConfig.json`
+
+- 打开 Trae，进入 `MCP` 页签。
+- 点击 `+ 添加` → 选择 `手动配置 (JSON)`。
+- 粘贴你的 `mcpConfig.json`（参考上面的示例）。
+- 点击 `确认`，并在列表中确认新增的服务器出现。
+- 将该服务器开关切换为开启（ON）。
+
+### 启动项目（步骤化）
+
+- 前置条件：安装 `'.NET 8 SDK'` 与 `Revit 2022`（其他版本需要手动配置插件的 API 引用与 `.addin` 目标）。
+- 构建插件：打开 `src/NET.App.Revit/NET.App.Revit.sln`，以 Release 构建；将生成的 `.addin` 与 DLL 拷贝到 `%APPDATA%\Autodesk\Revit\Addins\2022`。
+- 启动 MCP 服务器（命令行）：运行 `dotnet run --project d:\GitHub\revit_mcp_dotnet-main\src\NET.App.Revit\NET.Mcp.Server`。
+- 启动 MCP 服务器（Trae）：在 MCP 页签中按上述方式添加 JSON 并开启开关。
+- 启动 Revit：打开 Revit，插件在 `附加模块 (Add-ins)` 中；使用插件提供的命令连接到正在运行的 MCP 服务器。
+- 验证：通过 MCP 客户端执行简单命令或查看日志，确认 Revit 会话已被控制。
