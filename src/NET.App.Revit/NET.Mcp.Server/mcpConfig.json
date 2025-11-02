@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "revit": {
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "D:\\your_path\\revit_mcp_dotnet-main\\src\\NET.App.Revit\\NET.Mcp.Server",
+        "--no-build"
+      ],
+      "env": {}
+    }
+  }
+}

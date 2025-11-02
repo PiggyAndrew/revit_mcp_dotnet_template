@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>NET.App.Revit 1.0.0</Name>
+		<Assembly>AI\NET.App.Revit.dll</Assembly>
+		<ClientId>31B1D5F3-AF49-442D-8689-5DF9B2F088E6</ClientId>
+		<FullClassName>NET.App.Revit.App</FullClassName>
+		<VendorId>piggyAndrew</VendorId>
+		<VendorDescription>piggyAndrew</VendorDescription>
+		<Author>piggyAndrew.github.io</Author>
+	</AddIn>
+</RevitAddIns>

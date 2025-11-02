@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.Mcp.Server", "NET.Mcp.Server\NET.Mcp.Server.csproj", "{D601F368-9B97-B7AD-7C2E-68A46F7661F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.App.Revit", "NET.App.Revit\NET.App.Revit.csproj", "{D52BBA76-D8B6-40F3-8AFD-D7DC7A221B86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "revit", "revit", "{D812A9EA-5C4B-4987-A4FB-DD9F6DCF01E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.App.API", "..\..\..\revit_mcp_dotnet\src\NET.App.Revit\NET.App.API\NET.App.API.csproj", "{66E47BA5-581C-44CC-B549-CB9B426C4347}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Rvt_22_Debug|Any CPU = Rvt_22_Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D601F368-9B97-B7AD-7C2E-68A46F7661F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D601F368-9B97-B7AD-7C2E-68A46F7661F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D601F368-9B97-B7AD-7C2E-68A46F7661F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D601F368-9B97-B7AD-7C2E-68A46F7661F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D601F368-9B97-B7AD-7C2E-68A46F7661F2}.Rvt_22_Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D601F368-9B97-B7AD-7C2E-68A46F7661F2}.Rvt_22_Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52BBA76-D8B6-40F3-8AFD-D7DC7A221B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52BBA76-D8B6-40F3-8AFD-D7DC7A221B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52BBA76-D8B6-40F3-8AFD-D7DC7A221B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52BBA76-D8B6-40F3-8AFD-D7DC7A221B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52BBA76-D8B6-40F3-8AFD-D7DC7A221B86}.Rvt_22_Debug|Any CPU.ActiveCfg = Rvt_22_Debug|Any CPU
+		{D52BBA76-D8B6-40F3-8AFD-D7DC7A221B86}.Rvt_22_Debug|Any CPU.Build.0 = Rvt_22_Debug|Any CPU
+		{66E47BA5-581C-44CC-B549-CB9B426C4347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E47BA5-581C-44CC-B549-CB9B426C4347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E47BA5-581C-44CC-B549-CB9B426C4347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E47BA5-581C-44CC-B549-CB9B426C4347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E47BA5-581C-44CC-B549-CB9B426C4347}.Rvt_22_Debug|Any CPU.ActiveCfg = Rvt_22_Debug|Any CPU
+		{66E47BA5-581C-44CC-B549-CB9B426C4347}.Rvt_22_Debug|Any CPU.Build.0 = Rvt_22_Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D52BBA76-D8B6-40F3-8AFD-D7DC7A221B86} = {D812A9EA-5C4B-4987-A4FB-DD9F6DCF01E2}
+		{66E47BA5-581C-44CC-B549-CB9B426C4347} = {D812A9EA-5C4B-4987-A4FB-DD9F6DCF01E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F3A7F76-9D29-4411-8A1D-FDA565F7FD99}
+	EndGlobalSection
+EndGlobal
