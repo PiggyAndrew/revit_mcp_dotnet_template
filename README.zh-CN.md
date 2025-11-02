@@ -1,5 +1,7 @@
 # Revit MCP DotNet 项目
 
+语言：中文 | [English](README.md)
+
 该项目包含两个主要组件：一个 Revit MCP (Mcp) 服务器和一个用于与其通信的 Revit 插件。
 
 ## Revit MCP 项目
@@ -65,3 +67,15 @@ Revit 插件 (`NET.App.Revit`) 是 Autodesk Revit 的一个插件，它连接到
 1.  更新 `.csproj` 文件中的 Revit API 引用。
 2.  调整 `.addin` 文件以针对所需的 Revit 版本。
 3.  重新构建项目。
+
+## 示例说明
+
+- MCP 服务器（.NET）：位于 `src/NET.App.Revit/NET.Mcp.Server`。包含一个本地启动示例 `mcpConfig.json`（含 Trae 配置示例）。
+- Revit 插件（.NET）：位于 `src/NET.App.Revit/NET.App.Revit`。提供插件项目及在 Revit 中加载的使用说明。
+
+以上示例均为 .NET 端实现。插件已在 Revit 2022 验证，其他版本需要手动配置 API 引用和 `.addin` 目标版本。
+
+## 快速链接
+
+- 英文详细指南：`src/NET.App.Revit/README.md`
+- 中文详细指南：`src/NET.App.Revit/README.zh-CN.md`
