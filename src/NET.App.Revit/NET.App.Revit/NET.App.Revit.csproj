@@ -49,10 +49,6 @@
 		</Compile>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\..\..\..\revit_mcp_dotnet\src\NET.App.Revit\NET.App.API\NET.App.API.csproj" />
-	</ItemGroup>
-
 	<Target Name="CopyApplication" BeforeTargets="PostBuildEvent" Condition="'$(Configuration.Contains(Debug))' And '$(StartAction)'=='Program'">
 		<ItemGroup>
 			<SourceFiles Include="$(ProjectDir)$(OutDir)\**\*.*"></SourceFiles>

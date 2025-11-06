@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\revit_mcp_dotnet\src\NET.App.Revit\NET.App.API\NET.App.API.csproj" />
+    <ProjectReference Include="..\NET.App.API\NET.App.API.csproj" />
   </ItemGroup>
 
 </Project>

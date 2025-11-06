@@ -1,12 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NET.App.API.DataModel
+namespace NET.App.API.CommandModels
 {
-    public class Command<T>
+    public class Command<T> : ICommand<T>
     {
         public Command() { }
 
